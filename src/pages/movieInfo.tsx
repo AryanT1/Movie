@@ -58,6 +58,7 @@ const MovieInfo = () => {
       if (data.Response === "False") {
         setErrorMessage(data.Error || "Failed to fetch movies details");
         setMovieData({});
+       console.log(errorMessage);
         return;
       }
 
