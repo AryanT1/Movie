@@ -41,12 +41,10 @@ const API_OPTIONS = {
 const MovieInfo = () => {
   const { id } = useParams<{ id: string }>();
   const [movieData, setMovieData] = useState<MovieData>({});
-  const [isLoading, setIsLoading] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
 
   const fetchMovieDetails = async () => {
     try {
-      setIsLoading(true);
       setErrorMessage("");
       console.log(id);
       const endpoint = `${API_BASE_URL}/movie/${id}`;
@@ -68,7 +66,6 @@ const MovieInfo = () => {
       console.log(`Error fetching movies: ${error} `);
       setErrorMessage("Error fetching movies. Please try again later.");
     } finally {
-      setIsLoading(false);
     }
   };
 
