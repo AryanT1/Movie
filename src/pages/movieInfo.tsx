@@ -102,7 +102,7 @@ const MovieInfo = () => {
         <div className="w-[70%] ml-20 flex relative flex-row gap-2">
           <div className="flex absolute top-0 right-0   bg-[#221f3d] p-2 rounded shadow-inner shadow-light-100/10 flex-row   items-center gap-1 h-fit  ">
             <img
-              className="size-3 flex  items-center object-contain"
+              className="size-4 flex  items-center object-contain"
               src={star}
               alt="star icon"
             />
