@@ -100,9 +100,9 @@ const MovieInfo = () => {
           </div>
         </div>
         <div className="w-[70%] ml-20 flex relative flex-row gap-2">
-          <div className="flex absolute top-0 right-0   bg-[#221f3d] p-2 rounded shadow-inner shadow-light-100/10 flex-row   items-center gap-1 h-fit ">
+          <div className="flex absolute top-0 right-0   bg-[#221f3d] p-2 rounded shadow-inner shadow-light-100/10 flex-row   items-center gap-1 h-fit  ">
             <img
-              className="size-4 flex items-center object-contain"
+              className="size-3 flex  items-center object-contain"
               src={star}
               alt="star icon"
             />
@@ -115,7 +115,7 @@ const MovieInfo = () => {
         </div>
       </div>
       <div className="mx-5 px-5 py-2 my-5  gap-[26px] flex flex-col sm:flex-row">
-        <div className="w-[300px] h-[440px] rounded-xl overflow-hidden">
+        <div className="w-max-[300px] h-max-[440px] rounded-xl overflow-hidden">
           <img
             src={
               movieData?.poster_path
@@ -123,7 +123,7 @@ const MovieInfo = () => {
                 : Poster
             }
             alt={movieData?.title || "Movie Poster"}
-            className="w-full h-full object-cover"
+            className="w-fit h-full object-contain"
           />
         </div>
 
